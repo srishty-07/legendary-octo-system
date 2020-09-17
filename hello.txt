@@ -1,4 +1,75 @@
-srishty yes my name is ??
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ ssh-keygen -t rsa -b 4096 -C "vanibedi07@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/acer/.ssh/id_rsa):
+/c/Users/acer/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/acer/.ssh/id_rsa
+Your public key has been saved in /c/Users/acer/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:xOvF4/FlDho5oO3bheciIUo+IEf3RixRQXugcijgknM vanibedi07@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|.    o=.         |
+|o. ... +         |
+|=.E oo. =        |
+|.+.oo o= + .     |
+| . . +. S O . o  |
+|. o . +o.o O =   |
+| o + o .o.+ + .  |
+|    +   .o.+     |
+|     .  .....    |
++----[SHA256]-----+
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ eval $(ssh-agent -s)
+Agent pid 1580
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/acer/.ssh/id_rsa (vanibedi07@gmail.com)
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ clip < ~/.ssh/id_rsa.pub
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git push -u origin master
+The authenticity of host 'github.com (13.234.210.38)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'github.com,13.234.210.38' (RSA) to the list of known hosts.
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 288 bytes | 8.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:srishty-07/legendary-octo-system.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git add .
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git commit -m "changed hey.txt"
+[master 5f4bfa9] changed hey.txt
+ 2 files changed, 142 insertions(+), 1 deletion(-)
+ create mode 100644 Agent
+ rewrite hey.txt (100%)
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
 $ git push -u origin master
 Enumerating objects: 6, done.
 Counting objects: 100% (6/6), done.
@@ -9,6 +80,220 @@ Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
 To github.com:srishty-07/legendary-octo-system.git
    8b72954..5f4bfa9  master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ ^C
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git log
+commit 5f4bfa9703f1b84d11ee3db6e6282481d28dd52b (HEAD -> master, origin/master)
+Author: srishty bedi <vanibedi07@gmail.com>
+Date:   Thu Sep 17 21:22:33 2020 +0530
+
+    changed hey.txt
+
+commit 8b72954162e54910efbc08cbf5a65b0d522e7b22
+Author: srishty bedi <vanibedi07@gmail.com>
+Date:   Wed Sep 16 14:09:02 2020 +0530
+
+    hello
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git pull origin master
+Warning: Permanently added the RSA host key for IP address '13.234.176.102' to the list of known hosts.
+From github.com:srishty-07/legendary-octo-system
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git log
+commit 5f4bfa9703f1b84d11ee3db6e6282481d28dd52b (HEAD -> master, origin/master)
+Author: srishty bedi <vanibedi07@gmail.com>
+Date:   Thu Sep 17 21:22:33 2020 +0530
+
+    changed hey.txt
+
+commit 8b72954162e54910efbc08cbf5a65b0d522e7b22
+Author: srishty bedi <vanibedi07@gmail.com>
+Date:   Wed Sep 16 14:09:02 2020 +0530
+
+    hello
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git diff hello.txt
+diff --git a/hello.txt b/hello.txt
+index 4fbcf9a..7651a88 100644
+--- a/hello.txt
++++ b/hello.txt
+@@ -1 +1 @@
+-yes my name is ??
++srishty yes my name is ??
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git diff hey.txt
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.txt
+        modified:   hey.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git diff hey.txt
+diff --git a/hey.txt b/hey.txt
+index d8703eb..00f49aa 100644
+--- a/hey.txt
++++ b/hey.txt
+@@ -139,4 +139,4 @@ no changes added to commit (use "git add" and/or "git commit -a")
+
+ acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+ $
+-
++/////to make ssd key
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git add .
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git commit -m "srishty"
+[master ac10d2a] srishty
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 378 bytes | 37.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:srishty-07/legendary-octo-system.git
+   5f4bfa9..ac10d2a  master -> master
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git add .
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git commit -m "added some lines related to ssd key"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git push origin master
+Everything up-to-date
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git diff hello.txt
+diff --git a/hello.txt b/hello.txt
+index 7651a88..1a806a9 100644
+--- a/hello.txt
++++ b/hello.txt
+@@ -1 +1,14 @@
+ srishty yes my name is ??
++$ git push -u origin master
++Enumerating objects: 6, done.
++Counting objects: 100% (6/6), done.
++Delta compression using up to 4 threads
++Compressing objects: 100% (3/3), done.
++Writing objects: 100% (4/4), 1.35 KiB | 230.00 KiB/s, done.
++Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
++To github.com:srishty-07/legendary-octo-system.git
++   8b72954..5f4bfa9  master -> master
++Branch 'master' set up to track remote branch 'master' from 'origin'.
++
++
++
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ ^C
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git add .
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git commit -m "some lines related to ssd key"
+[master e127e6a] some lines related to ssd key
+ 1 file changed, 13 insertions(+)
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 594 bytes | 118.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:srishty-07/legendary-octo-system.git
+   ac10d2a..e127e6a  master -> master
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$
+
+
 
 
 
