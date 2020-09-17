@@ -1,1 +1,142 @@
-helloooo my name is ???
+$ git remote add origin git@github.com:srishty-07/legendary-octo-system.git
+fatal: remote origin already exists.
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git push -u origin master
+The authenticity of host 'github.com (13.234.210.38)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ ssh-keygen -t rsa -b 4096 -C "vanibedi07@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/acer/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/acer/.ssh/id_rsa
+Your public key has been saved in /c/Users/acer/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:37N3aueaq3ipm+VeCvCRbigoNpfz9DD6ptOERsHBV14 vanibedi07@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|   o.. .. E      |
+|    + .. .       |
+|     o  .        |
+|    .      .     |
+|   . .  S o      |
+|    oo.  * o     |
+|  +.=o= . * +..  |
+| . +.=o= . *o=o.o|
+|    o=o . ==*+=B.|
++----[SHA256]-----+
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$  eval $(ssh-agent -s)
+Agent pid 1362
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ > Agent pid 59566
+bash: pid: command not found
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ eval $(ssh-agent -s)
+Agent pid 1375
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$  ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/acer/.ssh/id_rsa (vanibedi07@gmail.com)
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ $ clip < ~/.ssh/id_rsa.pub
+bash: $: command not found
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ clip < ~/.ssh/id_rsa.pub
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ $ clip < ~/.ssh/id_rsa.pub
+bash: $: command not found
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git push -u origin master
+The authenticity of host 'github.com (13.234.210.38)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git push -u origin master
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git push -u origin master
+The authenticity of host 'github.com (13.234.210.38)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git push -u origin master
+The authenticity of host 'github.com (13.234.210.38)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ clip < ~/.ssh/id_rsa.pub
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ clip < ~/.ssh/id_rsa.pub
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git push -u origin master
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hey.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Agent
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
+$
+
