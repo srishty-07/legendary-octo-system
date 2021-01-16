@@ -271,13 +271,7 @@ $ git commit -m "some lines related to ssd key"
 [master e127e6a] some lines related to ssd key
  1 file changed, 13 insertions(+)
 
-acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
-$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
 
-nothing to commit, working tree clean
 
 acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
 $ git push origin master
@@ -290,12 +284,12 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To github.com:srishty-07/legendary-octo-system.git
    ac10d2a..e127e6a  master -> master
 
-acer@DESKTOP-2OMJLOH MINGW64 ~/Desktop/SB (master)
-$
+
 
 
 
 /////helloooo i have made somechanges in the file kindly rfer to them here......
+///i am now deleting some lines from the above code to see some changes
 
 
 
